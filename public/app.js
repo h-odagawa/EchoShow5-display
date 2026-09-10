@@ -1,5 +1,6 @@
 const NEWS_URL = "news.json";
 const NEWS_REFRESH_MS = 5 * 60 * 1000;
+const TICKER_PIXELS_PER_SECOND = 90;
 const CACHE_KEY = "echoshow-news-v1";
 
 const dateElement = document.querySelector("#date");
@@ -62,7 +63,7 @@ function showNews() {
   tickerElement.replaceChildren(createTickerItem(item));
   const windowWidth = tickerElement.parentElement.clientWidth;
   const tickerWidth = tickerElement.getBoundingClientRect().width;
-  const duration = Math.max(10, Math.min(35, (windowWidth + tickerWidth) / 72));
+  const duration = Math.max(8, Math.min(28, (windowWidth + tickerWidth) / TICKER_PIXELS_PER_SECOND));
   tickerElement.style.setProperty("--ticker-duration", `${duration}s`);
   tickerElement.style.setProperty("--ticker-start", `${windowWidth}px`);
   tickerElement.style.setProperty("--ticker-end", `${-tickerWidth}px`);
