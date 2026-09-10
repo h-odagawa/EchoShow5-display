@@ -4,43 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#05070b">
-    <title>時計・カレンダー・天気</title>
+    <title>時計とニュース</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="clock-screen" aria-label="時計、カレンダー、天気とニュース">
-      <div class="dashboard">
-        <section class="clock" aria-label="現在時刻" aria-live="off">
-          <time id="time" class="time"></time>
-          <p id="date" class="date"></p>
-
-          <aside class="weather" aria-label="天気予報" aria-live="polite">
-            <p id="weather-place" class="weather-place">天気を取得中</p>
-            <div class="weather-items">
-              <div class="weather-item">
-                <span class="weather-label">いま</span>
-                <span id="weather-now-icon" class="weather-icon" aria-hidden="true">--</span>
-                <span id="weather-now-summary" class="weather-summary">取得中</span>
-                <strong id="weather-now-temp" class="weather-temp">--°</strong>
-              </div>
-              <div class="weather-item weather-item-future">
-                <span class="weather-label">3時間後</span>
-                <span id="weather-later-icon" class="weather-icon" aria-hidden="true">--</span>
-                <span id="weather-later-summary" class="weather-summary">取得中</span>
-                <strong id="weather-later-temp" class="weather-temp">--°</strong>
-              </div>
-            </div>
-          </aside>
-        </section>
-
-        <section class="calendar" aria-label="今月のカレンダー">
-          <h2 id="calendar-title" class="calendar-title"></h2>
-          <div class="calendar-weekdays" aria-hidden="true">
-            <span>日</span><span>月</span><span>火</span><span>水</span><span>木</span><span>金</span><span>土</span>
-          </div>
-          <div id="calendar-days" class="calendar-days"></div>
-        </section>
-      </div>
+    <main class="clock-screen" aria-label="時計とニュース">
+      <section class="clock" aria-live="off">
+        <p id="date" class="date"></p>
+        <time id="time" class="time"></time>
+      </section>
       <section class="news" aria-label="NHKニュース">
         <p class="news-label">NHK NEWS</p>
         <div class="ticker-window" aria-live="polite">
