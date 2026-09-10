@@ -85,14 +85,6 @@ body { overflow: hidden; }
   text-decoration: none;
 }
 
-.ticker-item::before {
-  margin-right: .55em;
-  color: #78b6ff;
-  content: "●";
-  font-size: .58em;
-  vertical-align: .16em;
-}
-
 .ticker-item:focus-visible { outline: 2px solid #78b6ff; outline-offset: 4px; }
 
 @keyframes ticker {
