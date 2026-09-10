@@ -1,6 +1,8 @@
-# Echo Show Clock
+# Echo Show Dashboard
 
-Echo Show 5（960×480・横向き）のChromeで開く、24時間時計とNHK NEWS WEBの見出しティッカーです。静的サイトとしてGitHub Pagesに公開します。
+Echo Show 5（960×480・横向き）のChromeで開く、24時間時計、月間カレンダー、天気予報とNHK NEWS WEBの見出しティッカーです。静的サイトとしてGitHub Pagesに公開します。
+
+天気はブラウザの位置情報を使い、現在と3時間後を表示します。位置情報を取得できない場合は東京の天気を表示します。予報データは[Open-Meteo](https://open-meteo.com/)を使用します。
 
 ## 公開方法
 
