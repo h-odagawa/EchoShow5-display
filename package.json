@@ -1,0 +1,13 @@
+{
+  "name": "echoshow-clock",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch-news": "node scripts/fetch-news.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
